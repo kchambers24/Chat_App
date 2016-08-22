@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+section {
+    text-align: center;
+}
+h3 {
+    color: blue;
+}
+.chatContainer {
+    width: 700px;
+    height: 520px;
+    border: 2px solid blue;
+}
+.chatContainer> .chatHeader {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid blue;
+    background-color: blue;
+}
+.chatContainer> .chatHeader h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+.chatContainer> .chatMessages {
+    height: 420px;
+    border-bottom: 1px solid blue;
+}
+.chatMessages {
+    overflow-y: scroll;
+}
+#chatForm {
+    background: white;
+    border-top: 1px solid #ddd;
+    /*border-bottom: 1px solid #ddd;*/
+}
+#submitBtn {
+    cursor: pointer;
+}
+#text {
+    width: 85%;
+    padding: 3px;
+    padding-left: 10px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    margin: 5px;
+    height 30px;
+}
+.cm {
+    list-style: none;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+button {
+    color: blue;
+}
+p {
+    margin: 5px;
+}
+.menuBar {
+    background-color: lightgrey;
+    padding: 1px;
+    height: 30px;
+    border-bottom: 1px solid black;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+ul {
+    list-style: none;
+    padding: 4px;
+    margin-top: 4px;
+}
+.icons {
+    display: flex;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 466px;
+    top: 6px;
+}
+.fa-pied-piper {
+    padding-right: 10px;
+}
+.fa-minus-square {
+    padding-right: 10px;
+}
