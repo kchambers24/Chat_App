@@ -23,7 +23,7 @@ $(document).ready(() => {
             success: (response) => {
                 var chatHTML = response.data.map((post) => {
                     var date = $`{message.attributes.time}`;
-                    var formattedDate = moment(date).format('LT');
+                    var formattedDate = moment(date).fromNow();
                     return `<li data-id=${post.id}> ${post.attributes.username} : ${post.attributes.text} - ${formattedDate} <button class="delete">Delete</button></li>`;
                     //  ${post.attributes.['created-at']}
                     //  `<li data-id=${message.id}> ${message.attributes.username} / ${message.attributes['created-at']} </li>`);
